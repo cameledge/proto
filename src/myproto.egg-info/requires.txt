@@ -1,0 +1,12 @@
+torch
+torchvision
+pytorch-lightning
+hydra-core
+omegaconf
+wandb
+timm
+einops
+albumentations
+opencv-python-headless
+transformers
+datasets

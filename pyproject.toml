@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "myproto"
+version = "0.1.0"
+description = "Hydra-driven multimodal prototyping library"
+authors = [
+  { name = "Your Name", email = "your@email.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "torch",
+  "torchvision",
+  "pytorch-lightning",
+  "hydra-core",
+  "omegaconf",
+  "wandb",
+  "timm",
+  "einops",
+  "albumentations",
+  "opencv-python-headless",
+  "transformers",
+  "datasets"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
