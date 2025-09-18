@@ -1,0 +1,9 @@
+defaults:
+  - dataset: fake
+  - model: resnet18
+  - trainer: default
+  - logger: wandb
+  - input: input      # points to input/input.yaml
+  - input_batch: input_batch
+
+seed: 42
