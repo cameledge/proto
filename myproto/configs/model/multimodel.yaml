@@ -1,0 +1,15 @@
+name: multimodal
+
+clip:
+  model_name: openai/clip-vit-base-patch32
+  device: -1          # -1 = CPU, integer = CUDA device index
+
+llm:
+  model_name: gpt2
+  device: -1
+  max_length: 64
+  do_sample: false
+
+prompt:
+  top_k: 3
+  template: "Image description: {labels}. Expand into a paragraph about research-relevant observations and potential use-cases:"
